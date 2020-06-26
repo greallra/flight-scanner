@@ -1,0 +1,96 @@
+.results {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+@media only screen and (min-width: 550px) {
+    .results {
+        flex-direction: row;
+    }
+}
+.paper {
+    height: auto;
+    /* width: 50%; */
+}
+.paper:nth-child(1) {
+    flex-grow: 6;
+}
+.paper:nth-child(2) {
+    flex-grow: 1;
+}
+.paper-inner-cont {
+ padding: 4px;
+}
+.carrier {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+}
+.outbound-cont{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.outbound-inner {
+    display: flex;
+    flex-direction: row;
+}
+.outbound-inner:nth-child(1) {
+    justify-content: space-between;
+}
+.outbound-inner:nth-child(2) {
+    justify-content: center;
+}
+.outbound-inner:nth-child(3) {
+    justify-content: space-between;
+}
+.outbound-inner:nth-child(4) {
+    justify-content: center;
+}
+.line { 
+    width: 50px;
+   position: relative;
+}
+.line:before { content: '';
+    position: absolute;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    height: 100%;
+    width: 100%;
+    transform: translateY(-45%);
+}
+.flight-time {
+    font-size: 10px;
+}
+.hr {
+    font-size: 18px;
+}
+.city {
+    font-size: 13px;
+}
+.direct {
+    font-size: 10px;
+    color: #318538;
+    font-weight: 700;
+}
+.price-cont {
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: '10px';
+    max-width: '350p;x';
+    margin: 'auto';
+}
+.price-cont {
+    font-weight: 900;
+}
+@media only screen and (min-width: 550px) {
+    .price-cont {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

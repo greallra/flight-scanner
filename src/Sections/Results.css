@@ -1,0 +1,107 @@
+.main-card {
+    padding: 20px;
+    
+}
+/* .inputs {
+    display: flex;
+    align-items: center;
+} */
+.inner-card-cont {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+
+}
+
+@media only screen and (min-width: 800px) {
+    .inner-card-cont {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+    }
+}
+.inner-card {
+    font-size: 12px;
+}
+.inner-card:nth-child(1) {
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media only screen and (min-width: 500px) {
+  
+    
+}
+
+
+.inner-card:nth-child(2) {
+
+}
+.inner-card:nth-child(3) {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.results-filters {
+    display: flex;
+    padding: 0px 20px;
+}
+.results-quick-filters {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 10px;
+}
+.btn-child {
+    display: block;
+}
+.pointer {
+    font-size: 16px;
+}
+.pointer:hover{
+    cursor: pointer;
+}
+.pointer *:active{
+    color:black;
+    background-color: blanchedalmond;
+}
+.loader_cont {
+    display: flex !important;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+@media only screen and (min-width: 500px) {
+  
+    #origin-decrement, #origin-increment, #dest-increment, #dest-decrement {
+        margin: 10px;
+        font-size: 40px;
+    }
+    
+}
+
+.quick-filter-cont {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}
+/* text */
+.quick-filter-cont span:nth-child(1) {
+    padding-right: 7px;
+}
+/* Price */
+.quick-filter-cont span:nth-child(2) {
+    font-size: 17px;
+    font-weight: 900;
+}
+@media only screen and (min-width: 500px) {
+    .quick-filter-cont {
+        flex-direction: row;
+        
+    }
+}

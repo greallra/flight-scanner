@@ -1,0 +1,23 @@
+.input {
+    height: 40px !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* DROPDOWNTOGGLE.JS styleS */
+.dropRow {
+    padding: 12px 0;
+   display: flex;
+   width: 100%;
+   align-items: center;
+   /* justify-content: space-between; */
+}
+.dropRow  > * {
+    text-align: left;
+    min-width: 60px;
+}
+.MuiSvgIcon-root:hover {
+    cursor: pointer;
+}
+.btn-secondary, .dropdown-toggle {
+    border-color: rgb(206, 212, 218) !important;
+}

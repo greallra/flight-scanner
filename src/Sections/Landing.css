@@ -1,0 +1,134 @@
+.landing {
+    /* padding: 0 20px; */
+    max-width: 1100px;
+    margin: auto;
+    color: #fff;
+}
+.cont {
+    position: relative;
+    width: 300px;
+    margin: 30px auto;
+}
+/* Autofill */
+.dataDisplay {
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    width: 200px;
+}
+.list {
+    background-color: #fff;
+    color: #111236;
+    padding: 0;
+    top: 40px;
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    z-index: 2;
+    border-radius: 1%;
+}
+.list li {
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    padding: 8px;
+    font-size: 12px;
+}
+.list li:hover {
+    cursor: pointer;
+}
+.list-cont {
+    position: relative;
+}
+@media only screen and (min-width: 900px) {
+    .inputs-cont {
+        display: flex;
+    }
+}
+.org-dest {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Arrows */
+.org-dest > div:nth-child(1) {
+    flex-grow: 1;
+ 
+}
+.org-dest svg {
+    align-self: center;
+    flex-grow: 1;
+}
+.org-dest svg:hover {
+    cursor: pointer;
+    color: rgba(0,0,0,0,8);
+}
+.org-dest > div:nth-child(3) {
+    flex-grow: 1;
+}
+@media only screen and (min-width: 900px) {
+    
+    .org-dest {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+   }
+
+    .org-dest > div:nth-child(1) {
+        flex-grow: 5;
+    
+    }
+    .org-dest svg {
+        align-self: center;
+        flex-grow: 1;
+    }
+    .org-dest > div:nth-child(3) {
+        flex-grow: 5;
+    }
+    /* .MuiPaper-root {
+        color: #fff !important;
+    } */
+    .input-cont:nth-child(1) {
+        width:40%;
+    }
+    .input-cont:nth-child(2) {
+        width:40%;
+    }
+    .input-cont:nth-child(3) {
+        width:20%;
+    }
+}
+
+
+input {
+    height: "40px";
+    box-sizing: "border-box";
+}
+.dates {
+    display: flex;
+    margin: 20px 0;
+}
+.radio-cont {
+    display: flex;
+    padding: 12px 0;
+}
+.form-check-input:hover {
+    cursor: pointer;
+}
+@media only screen and (min-width: 900px) {
+    .dates {
+        margin: 0;
+    }
+}
+.DayPickerInput:nth-child(1) {
+    width: 50%;
+}
+.DayPickerInput:nth-child(2) {
+    width: 50%;
+}
+.dropdown {
+    width: 100% !important;
+}
+.dropdown > div {
+    width: 100% !important;
+}
+

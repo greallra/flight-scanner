@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Nav from './Sections/Nav';
+import Landing from './Sections/Landing';
+import { getData } from './fetches';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  state ={
+    data:[]
+  }
+
+componentDidMount() {
+  getData().then((res)=>{
+    this.setState({data: res})
+  })
+}
+  render() {
+    return (
+      <div className="App">
+        <Nav></Nav>
+        <Landing data={this.state.data}/>
+      </div>
+    );
+  }
+  
 }
 
 export default App;

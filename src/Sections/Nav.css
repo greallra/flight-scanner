@@ -1,0 +1,13 @@
+.nav-cont {
+    background-color: rgba(0,0,0,0.8);
+    color:#fff;
+    display: flex;
+    justify-content: center;
+}
+.nav-item {
+    padding: 20px;
+    cursor: pointer;
+}
+.nav-item:hover {
+    background-color: rgba(0,0,0,0.9);
+}
