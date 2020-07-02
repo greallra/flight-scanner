@@ -57,7 +57,7 @@ export default function QuoteSelected(props) {
                 {props.isDirect ? <div></div>:
                 <div>
                      {/* first column - outbound and date */}
-                    <div style={{ color:'black', marginTop: '10px'}}><span style={{fontWeight: '800', color:'rgba(0,0,0,0,8)'}}>Inbound: </span><span>{moment(props.quoteSelected.InboundLeg.Date).format("dddd,Do MMMM  YYYY")}</span></div>
+                    <div style={{ color:'black'}}><span style={{fontWeight: '800', color:'rgba(0,0,0,0,8)'}}>Inbound: </span><span>{moment(props.quoteSelected.InboundLeg.Date).format("dddd,Do MMMM  YYYY")}</span></div>
                     <Paper elevation={3} className="paper" >
                     <div className="paper-inner-cont">
                     <div className="carrier">
